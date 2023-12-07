@@ -12,7 +12,7 @@ AggMethod='max'
 DefuzzMethod='centroid'
 
 [Input1]
-Name='ml'
+Name='in'
 Range=[0 10]
 NumMFs=3
 MF1='Low':'trimf',[-3.383 0 4.91]
@@ -20,7 +20,7 @@ MF2='Med':'trimf',[4.093 5.727 7.363]
 MF3='High':'trimf',[6.297 10 670]
 
 [Input2]
-Name='p'
+Name='li'
 Range=[0.1 0.4]
 NumMFs=3
 MF1='Low':'trimf',[-0.00152 0.1 0.225]
@@ -28,7 +28,7 @@ MF2='Med':'trimf',[0.2 0.25 0.3]
 MF3='High':'trimf',[0.275 0.4 1.12]
 
 [Input3]
-Name='n'
+Name='ris'
 Range=[0 100]
 NumMFs=3
 MF1='Low':'trimf',[-41.67 0 40]
@@ -44,7 +44,7 @@ MF2='med':'trimf',[3 5.03 7.03]
 MF3='High':'trimf',[6.04497354497354 10 14.2]
 
 [Output1]
-Name='tRes'
+Name='Res'
 Range=[0 100]
 NumMFs=3
 MF1='Low':'trimf',[-33.82 0 60]
