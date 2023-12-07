@@ -18,15 +18,15 @@ for epoch = 1:epochs
         total_error = total_error + abs(error);
 
         w = w + learning_rate * error * X(i, :)';
-     b = b + learning_rate * error;
+        b = b + learning_rate * error;
     end
 
     average_error = total_error / size(X, 1);
     disp(['Эпоха ' num2str(epoch) ', Средняя ошибка: ' num2str(average_error)]);
 
     if average_error < max_error
-    disp(['Обучение завершено на эпохе ' num2str(epoch)]);
-    break;
+        disp(['Обучение завершено на эпохе ' num2str(epoch)]);
+        break;
     end
 end
 

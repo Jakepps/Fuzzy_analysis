@@ -31,7 +31,7 @@ for i = 1:length(membership_functions)
 
     % Сохранение результатов в ячейки
     output_cell{i} = output;
-    error_cell{i} = error;
+    error_cell{i} = error.^2;
 end
 
 % Создание таблицы с результатами

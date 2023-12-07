@@ -19,11 +19,11 @@ fis_optimized = anfis(data, options);
 
 % Оценка адекватности
 output = evalfis([X1(:), X2(:)], fis_optimized);
-error = d(:) - output;
+error = (d(:) - output).^2;
 
 % Создание таблицы с результатами
 results_table = table(X1(:), X2(:), d(:), output, error, 'VariableNames', {'x1', 'x2', 'd_exact', 'output', 'error'});
 
 % Вывод таблицы
 %disp(results_table);
-%writetable(results_table, 'results_table.csv');
+writetable(results_table, 'results_table.csv');
