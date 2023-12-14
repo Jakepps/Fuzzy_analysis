@@ -4,12 +4,12 @@ Type='mamdani'
 Version=2.0
 NumInputs=4
 NumOutputs=1
-NumRules=20
+NumRules=22
 AndMethod='min'
 OrMethod='max'
 ImpMethod='min'
 AggMethod='max'
-DefuzzMethod='som'
+DefuzzMethod='centroid'
 
 [Input1]
 Name='tWater'
@@ -77,3 +77,5 @@ MF4='VeryLow':'trimf',[-100 -90 -40]
 1 2 1 2, 1 (1) : 1
 3 1 3 1, 3 (1) : 1
 2 3 1 2, 3 (1) : 1
+4 1 2 4, 3 (1) : 1
+4 3 1 1, 2 (1) : 1
