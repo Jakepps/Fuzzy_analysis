@@ -14,42 +14,47 @@ DefuzzMethod='centroid'
 [Input1]
 Name='in'
 Range=[0 10]
-NumMFs=3
-MF1='Low':'trimf',[-3.383 0 4.91]
+NumMFs=4
+MF1='Low':'trimf',[1.5 3 4.91]
 MF2='Med':'trimf',[4.093 5.727 7.363]
 MF3='High':'trimf',[6.297 10 670]
+MF4='VeryLow':'trimf',[-3.383 0 2]
 
 [Input2]
 Name='li'
 Range=[0.1 0.4]
-NumMFs=3
-MF1='Low':'trimf',[-0.00152 0.1 0.225]
+NumMFs=4
+MF1='Low':'trimf',[0.13 0.17 0.225]
 MF2='Med':'trimf',[0.2 0.25 0.3]
 MF3='High':'trimf',[0.275 0.4 1.12]
+MF4='VeryLow':'trimf',[-0.000886 0.1 0.14]
 
 [Input3]
 Name='ris'
 Range=[0 100]
-NumMFs=3
-MF1='Low':'trimf',[-41.67 0 40]
+NumMFs=4
+MF1='Low':'trimf',[5 21 40]
 MF2='Med':'trimf',[30 50 70]
 MF3='High':'trimf',[60 100.1 141.8]
+MF4='VeryLow':'trimf',[-41 0 10]
 
 [Input4]
 Name='ap'
 Range=[0 10]
-NumMFs=3
-MF1='Low':'trimf',[-4.17 0 4]
+NumMFs=4
+MF1='Low':'trimf',[1 2.5 4]
 MF2='med':'trimf',[3 5.03 7.03]
 MF3='High':'trimf',[6.04497354497354 10 14.2]
+MF4='VeryLow':'trimf',[-4.17 0 2]
 
 [Output1]
 Name='Res'
 Range=[0 100]
-NumMFs=3
-MF1='Low':'trimf',[-33.82 0 60]
+NumMFs=4
+MF1='Low':'trimf',[20 40 60]
 MF2='Med':'trimf',[50 65 80]
 MF3='High':'trimf',[70 100 6700]
+MF4='VeryLow':'trimf',[-33.82 0 30]
 
 [Rules]
 1 1 1 1, 1 (1) : 1
