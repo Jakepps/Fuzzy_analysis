@@ -43,7 +43,7 @@ Name='VolumeW'
 Range=[0 10]
 NumMFs=4
 MF1='Low':'trimf',[1 2.5 4]
-MF2='med':'trimf',[3 5.03 7.03]
+MF2='Med':'trimf',[3 5.03 7.03]
 MF3='High':'trimf',[6.04497354497354 10 14.2]
 MF4='VeryLow':'trimf',[-4.17 0 2]
 
